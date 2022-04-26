@@ -371,15 +371,13 @@ class ServiceGenerator {
     /*
     * ztao更改，根据参数，直接生成个URL的函数
     * */
-    if (this.config.isUrlToFun) {
-      return data.method + this.genDefaultFunctionName(data.path, pathBasePrefix);
-    }
+    return data.method + this.genDefaultFunctionName(data.path, pathBasePrefix);
 
-    return this.config.hook && this.config.hook.customFunctionName
-      ? this.config.hook.customFunctionName(data)
-      : data.operationId
-        ? this.resolveFunctionName(stripDot(data.operationId), data.method)
-        : data.method + this.genDefaultFunctionName(data.path, pathBasePrefix);
+    // return this.config.hook && this.config.hook.customFunctionName
+    //   ? this.config.hook.customFunctionName(data)
+    //   : data.operationId
+    //     ? this.resolveFunctionName(stripDot(data.operationId), data.method)
+    //     : data.method + this.genDefaultFunctionName(data.path, pathBasePrefix);
   }
 
   public getServiceTP() {

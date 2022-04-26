@@ -12,7 +12,6 @@ export default (api: IApi) => {
       schema(joi) {
         const itemSchema = joi.object({
           requestLibPath: joi.string(),
-          isUrlToFun: joi.boolean(),
           schemaPath: joi.string(),
           mock: joi.boolean(),
           projectName: joi.string(),

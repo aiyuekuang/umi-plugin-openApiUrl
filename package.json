@@ -1,7 +1,7 @@
 {
-  "name": "umi-plugin-openApiUrl",
+  "name": "umi-plugin-openapi-url",
   "main": "lib/index.js",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "",
   "authors": {
     "name": "ztao",
@@ -60,7 +60,8 @@
     "pre-commit": "lint-staged"
   },
   "files": [
-    "lib"
+    "lib",
+    "templates"
   ],
   "dependencies": {
     "@umijs/fabric": "^2.5.6",
